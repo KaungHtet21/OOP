@@ -5,14 +5,12 @@ public class Main {
     public static void main(String[] args) {
         //dataType name = data;
         // Reference Variable
-//        Counter counter1 = new Counter();
-//        Counter counter2 = new Counter();
-//
-//        Date date = new Date();
-//        System.out.println(date);
-//
-//        counter1.getCount();
-//        counter2.getCount();
+        Counter counter1 = new Counter();
+        Counter counter2 = new Counter();
+
+        counter1.getCount();
+        counter2.getCount();
+        counter2.getCount();
 //
 //        // Primitive Variable
 //        byte b = 2;
@@ -25,15 +23,15 @@ public class Main {
 //        i = (int) l;
 //        System.out.println(i);
 
-        Example example = new Example();
-        System.out.println(example.i);
-        example.i = 1;
-        System.out.println(example.i);
+//        Example example = new Example();
+//        System.out.println(example.i);
+//        example.i = 1;
+//        System.out.println(example.i);
     }
 }
 class Counter {
     static int count = 0;
-    public void getCount() {
+    public static void getCount() {
         count++;
         System.out.println(count);
     }
